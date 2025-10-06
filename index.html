@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chúc Mừng Trung Thu</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <!-- Audio element without src; will be controlled by playlist logic in script.js -->
+  <audio id="bg-music" preload="auto" autoplay muted playsinline></audio>
+  <!-- Gift gate overlay -->
+  <div id="gift-gate" aria-label="Màn mở quà" role="dialog">
+    <div class="gift-content">
+      <div class="gift-box">
+        <img src="images/gift/banh_trung_thu.png" alt="Hộp quà Trung Thu" class="gift-image" />
+      </div>
+      <button id="enter-gift" class="pulse-btn" aria-label="Nhận quà">Nhận quà ✨</button>
+    </div>
+  </div>
+  <div id="night-sky">
+    <div class="moon"></div>
+    <div id="lantern-container"></div>
+  </div>
+
+  <div id="popup-overlay" class="hidden">
+    <div id="popup" role="dialog" aria-modal="true">
+      <button id="close-popup" aria-label="Đóng">&times;</button>
+      <img id="popup-image" alt="Hình Trung Thu" />
+      <p id="popup-message"></p>
+    </div>
+  </div>
+
+  <noscript>Trang này cần JavaScript để hiển thị hiệu ứng lồng đèn và lời chúc.</noscript>
+  <script src="js/script.js"></script>
+</body>
+</html>
